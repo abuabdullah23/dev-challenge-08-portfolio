@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="./images/devchallenges.png" />
+  <title>My Portfolio</title>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style/custom.css">
+
+  <!-- CSS Linking -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom CSS -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'main-color': '#4F4F4F',
+            'secondary-gray': '#828282',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="bg-[#F2F2F2] h-screen">
+  <section class="container mx-auto px-4 md:px-8 lg:px-12 lg:p-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-16 py-8">
+      <div class="w-full">
+        <!-- Developer Details -->
+        <div class="bg-white rounded-xl p-4">
+          <img class="w-full rounded-xl" src="./images/developer.jpg" alt="">
+          <h3 class="text-2xl font-semibold mt-3 text-main-color">Billy Pearson</h3>
+          <p class="text-secondary-gray text-lg">Front-end developer</p>
+
+          <div class="mt-5 flex flex-col gap-2">
+            <div class="flex items-center gap-3">
+              <img src="./svg-icon/email-fill.svg" alt="Mail icon">
+              <p class="text-secondary-gray font-medium">billy@example.com</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="./svg-icon/call-fill.svg" alt="Call icon">
+              <p class="text-secondary-gray font-medium">(+603) 546 624 342</p>
+            </div>
+          </div>
+
+          <p class="text-secondary-gray font-medium my-5">Self-motivated developer, who is willing to learn and create
+            outstanding UI applications.</p>
+        </div>
+
+        <!--  -->
+        <div>
+
+        </div>
+      </div>
+
+      <div class="w-full lg:col-span-2">
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
